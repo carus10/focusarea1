@@ -19,6 +19,11 @@ If you just want to use the app, go to the **[Releases](https://github.com/carus
 
 ---
 
+## in-app images
+
+**[Screenshots](https://github.com/carus10/focusarea1/tree/main/assets/screenshots)**
+
+
 ## ✨ Features
 
 ### 🍅 Pomodoro Timer with Gamification
