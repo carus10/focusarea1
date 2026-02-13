@@ -1,0 +1,27 @@
+{
+  "appId": "com.fullfocus.dashboard",
+  "productName": "Full-Focus Dashboard",
+  "directories": {
+    "output": "release",
+    "buildResources": "assets"
+  },
+  "files": [
+    "dist/**/*",
+    "dist-electron/**/*",
+    "package.json",
+    "node_modules/electron-store/**/*"
+  ],
+  "afterPack": "./scripts/afterPack.cjs",
+  "win": {
+    "target": ["nsis"],
+    "icon": "assets/icon.ico",
+    "artifactName": "${productName}-${version}-Setup.${ext}",
+    "signAndEditExecutable": false
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  }
+}

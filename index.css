@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  
+  --color-primary: #7B5CFF;
+  --color-primary-hover: #6a48e0;
+  --color-primary-light: rgba(123, 92, 255, 0.1);
+  --color-dark-bg: #121212;
+  --color-dark-surface: #1E1E1E;
+  --color-dark-card: #2A2A2A;
+  --color-dark-border: #3A3A3A;
+  --color-light-bg: #F7F8FC;
+  --color-light-surface: #FFFFFF;
+  --color-light-card: #FFFFFF;
+  --color-light-border: #E0E0E0;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Scrollbar Stilleri */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(123, 92, 255, 0.3) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(123, 92, 255, 0.3);
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(123, 92, 255, 0.5);
+}
